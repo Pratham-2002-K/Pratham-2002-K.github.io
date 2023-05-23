@@ -1,0 +1,129 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Inspection</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: royalblue;
+      font-size: 3rem;
+      font-family: 'inter', sans-serif;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+
+    .quiz {
+      margin: 20px;
+      text-align: left;
+    }
+
+    .question {
+      font-size: 18px;
+      font-weight: normal;
+      text-align: left;
+      margin: 20px;
+    }
+
+    .answer {
+      font-size: 16px;
+      font-weight: normal;
+      text-align: left;
+      margin: 20px;
+    }
+  </style>
+<style id="aby-style"></style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1110.0" data-gr-ext-installed="">
+  <h1>Do you know Pratham?</h1>
+  <h2>This is a simple website to check how well you know me</h2>
+  <p>
+    Please take this opportunity to gauge your familiarity with me, Pratham Katakol, 
+    by answering the following questions. By doing so, you will ascertain the extent of your knowledge about me. Best of luck!
+  </p>  
+  <hr>
+  <div class="quiz">
+    <div class="question">
+      Q.1 Do I own a pet?
+    </div>
+    <div class="answer">
+      <input type="text" id="answer1">
+      <button onclick="checkAnswer1()">Submit</button>
+      <p id="result1"></p>
+    </div>
+    <div class="question">
+      Q.2 Where did I go for my first foreign visit?
+    </div>
+    <div class="answer">
+      <input type="text" id="answer2">
+      <button onclick="checkAnswer2()">Submit</button>
+      <p id="result2"></p>
+    </div>
+    <div class="question">
+      Q.3 What is the heaviest I have been? (kgs)
+    </div>
+    <div class="answer">
+      <input type="text" id="answer3">
+      <button onclick="checkAnswer3()">Submit</button>
+      <p id="result3"></p>
+    </div>
+    <div class="question">
+      Q.4 If I am super hungry, what will I eat first? Biryani or Pizza?
+    </div>
+    <div class="answer">
+      <input type="text" id="answer4">
+      <button onclick="checkAnswer4()">Submit</button>
+      <p id="result4"></p>
+    </div>
+  </div>
+
+<script>
+  function checkAnswer1() {
+    var answer = document.getElementById("answer1").value;
+    if (answer.toLowerCase() === "yes") {
+      document.getElementById("result1").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result1").innerHTML = "Incorrect. Try again.";
+    }
+  }
+  function checkAnswer2() {
+    var answer = document.getElementById("answer2").value;
+    if (answer.toLowerCase() === "indonesia") {
+      document.getElementById("result2").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result2").innerHTML = "Incorrect. Try again.";
+    }
+  }
+  function checkAnswer3() {
+    var answer = document.getElementById("answer3").value;
+    if (answer.toLowerCase() === "74") {
+      document.getElementById("result3").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result3").innerHTML = "Incorrect. Try again.";
+    }
+  }
+  function checkAnswer4() {
+    var answer = document.getElementById("answer4").value;
+    if (answer.toLowerCase() === "biryani") {
+      document.getElementById("result4").innerHTML = "Correct!";
+    } else {
+      document.getElementById("result4").innerHTML = "Incorrect. Try again.";
+    }
+  }
+</script>
+
+</body>
+</html>
